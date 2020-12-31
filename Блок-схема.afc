@@ -1,0 +1,159 @@
+<!DOCTYPE AFC>
+<algorithm version="1.2">
+  <branch>
+    <ou vars="1. В 1812 году Францию возглавлял Наполеон I, а кто же правил в России?"/>
+    <process text="1 Павел I"/>
+    <process text="2 Александр I"/>
+    <process text="3 Николай I"/>
+    <if cond="x = 2">
+      <branch>
+        <process text="s:=s+1"/>
+        <process text="Правильно"/>
+      </branch>
+      <branch>
+        <process text="Не правильно"/>
+      </branch>
+    </if>
+    <ou vars="2. По итогам какой войны Пётр I принял титул Императора Всероссийского?"/>
+    <process text="1 Крымская война"/>
+    <process text="1 Первая война за польское наследство"/>
+    <process text="3 Северная война"/>
+    <if cond="x = 3">
+      <branch>
+        <process text="s:=s+1"/>
+        <process text="Правильно"/>
+      </branch>
+      <branch>
+        <process text="Не правильно"/>
+      </branch>
+    </if>
+    <ou vars="3. В каком году произошло восстание декабристов?"/>
+    <process text="1 1825"/>
+    <process text="2 1827"/>
+    <process text="3 1832"/>
+    <if cond="x = 1">
+      <branch>
+        <process text="s:=s+1"/>
+        <process text="Правильно&#xa;"/>
+      </branch>
+      <branch>
+        <process text="Не правильно"/>
+      </branch>
+    </if>
+    <ou vars="4. С 1721 по 1905 годы в стране была именно эта форма монархии:"/>
+    <process text="1 Дуалистическая монархия"/>
+    <process text="2 Абсолютная монархия"/>
+    <process text="3 Парламентская монархия"/>
+    <if cond="x = 2">
+      <branch>
+        <process text="s:=s+1"/>
+        <process text="Правильно"/>
+      </branch>
+      <branch>
+        <process text="Не правильно"/>
+      </branch>
+    </if>
+    <ou vars="5. Первого русского царя из династии Романовых звали:"/>
+    <process text="1 Михаил Фёдорович"/>
+    <process text="2 Фёдор Никитич"/>
+    <process text="3 Алексей Михайлович"/>
+    <if cond="x = 1">
+      <branch>
+        <process text="s:=s+1"/>
+        <process text="Правильно"/>
+      </branch>
+      <branch>
+        <process text="Не правильно"/>
+      </branch>
+    </if>
+    <ou vars="6. После окончания Северной войны, Россия..."/>
+    <process text="1 Обеспечила выход к Балтийскому мор"/>
+    <process text="2 Обеспечила выход к Белому морю"/>
+    <process text="3 Присоединила княжество Молдавское"/>
+    <if cond="x = 1">
+      <branch>
+        <process text="s:=s+1"/>
+        <process text="Правильно"/>
+      </branch>
+      <branch>
+        <process text="Не правильно"/>
+      </branch>
+    </if>
+    <ou vars="7. Какой из этих хронологических порядков царствования верный?"/>
+    <process text="1 Пётр III - Екатерина II - Павел I"/>
+    <process text="2 Павел I - Екатерина II - Александр I"/>
+    <process text="3 Екатерина II - Александр I - Николай I"/>
+    <if cond="x = 1">
+      <branch>
+        <process text="s:=s+1"/>
+        <process text="Правильно"/>
+      </branch>
+      <branch>
+        <process text="Не правильно"/>
+      </branch>
+    </if>
+    <ou vars="8. Этот монарх погиб в результате теракта народовольцев"/>
+    <process text="1 Александр II"/>
+    <process text="2 Николай I"/>
+    <process text="3 Александр III"/>
+    <if cond="x = 1">
+      <branch>
+        <process text="s:=s+1"/>
+        <process text="Правильно"/>
+      </branch>
+      <branch>
+        <process text="Не правильно"/>
+      </branch>
+    </if>
+    <ou vars="9. В этом году Николай II отрёкся от престола:"/>
+    <process text="1 1916"/>
+    <process text="2 1917"/>
+    <process text="3 1918"/>
+    <if cond="x = 2">
+      <branch>
+        <process text="s:=s+1"/>
+        <process text="Правильно"/>
+      </branch>
+      <branch>
+        <process text="Не правильно"/>
+      </branch>
+    </if>
+    <ou vars="10. Кем было организовано шествие к Зимнему дворцу в 1905 году?"/>
+    <process text="1 Владимирым Лениным"/>
+    <process text="2 Попом Гапоном"/>
+    <process text="3 Петром Столыпиным"/>
+    <if cond="x = 2">
+      <branch>
+        <process text="s:=s+1"/>
+        <process text="Правильно"/>
+      </branch>
+      <branch>
+        <process text="Не правильно"/>
+      </branch>
+    </if>
+    <ou vars="Общее чило баллов за тест:"/>
+    <ou vars="s"/>
+    <if cond="0..5">
+      <branch>
+        <process text="Твои знания по истории нулевые... Иди учи!"/>
+      </branch>
+      <branch>
+        <if cond="6..8">
+          <branch>
+            <process text="Твои знания по истории средние. Тебе стоит повторить!"/>
+          </branch>
+          <branch>
+            <if cond="9..10">
+              <branch>
+                <process text="Твои знания по истории великолепны! Иди отдыхай!"/>
+              </branch>
+              <branch/>
+            </if>
+          </branch>
+        </if>
+      </branch>
+    </if>
+    <ou vars="---------- Ключ к тесту: ----------"/>
+    <ou vars="1 - 2,2 - 3,3 - 1,4 - 2,5 - 1,6 - 1,7 - 1,8 - 1,9 - 2,10 - 2"/>
+  </branch>
+</algorithm>
